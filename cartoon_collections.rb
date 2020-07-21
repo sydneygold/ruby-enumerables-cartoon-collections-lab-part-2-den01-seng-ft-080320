@@ -23,4 +23,5 @@ def find_valid_calls(planeteer_calls)
     element == valid_calls
     index += 1
   end
+  return element
 end
