@@ -26,5 +26,6 @@ planeteer_calls.each do |element|
     else
       return nil
     end
+    end
   end
 end
