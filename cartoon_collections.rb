@@ -18,6 +18,7 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
+  index = 0
   planeteer_calls.any? do |element|
     if element == valid_calls[index]
       return valid_calls[element]
