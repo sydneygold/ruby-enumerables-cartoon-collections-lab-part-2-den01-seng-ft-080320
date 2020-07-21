@@ -21,7 +21,6 @@ def find_valid_calls(planeteer_calls)
   index = 0
   (planeteer_calls).find_index do |element|
     planeteer_calls(element) == valid_calls(element)
-    end
     index += 1
   end
 end
