@@ -19,9 +19,8 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   index = 0
-  (planeteer_calls).find do |element, valid_calls|
-    while planeteer_calls[index] == valid_calls[index]
-      return element
+  (planeteer_calls).find_index do |element|
+    planeteer_calls(element) == valid_calls(element)
     end
     index += 1
   end
